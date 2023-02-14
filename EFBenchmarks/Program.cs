@@ -1,4 +1,5 @@
 using Database;
+using EFBenchmarks.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<EfBenchmarksDbContext>();
+
+builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -23,5 +23,5 @@ public class EfBenchmarksDbContext : DbContext
         options.UseSqlServer(_configuration.GetConnectionString("WebApiDatabase"));
     }
     
-    public DbSet<Player> Players { get; set; }
+    public DbSet<Player?> Players { get; set; }
 }
