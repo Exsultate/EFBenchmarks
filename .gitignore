@@ -1,0 +1,7 @@
+/Database/Migrations/
+**/obj
+**/bin
+
+# User-specific stuff:
+.idea
+.idea/.idea.EFBenchmarks/.idea/
